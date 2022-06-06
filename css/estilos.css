@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "GeekyFont";
+    src: url("../fonts/Slackey-Regular.ttf");
+}
+@font-face {
+    font-family: "StartFont";
+    src: url("../fonts/PressStart2P-Regular.ttf");
+}
+body{
+    background-color: rgb(230,230,230);
+}
+a {
+    text-decoration: none;
+    font-family: "StartFont";
+}.banner{
+    background-image: linear-gradient(316deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../images/geekynautastodos\ 4.png");
+    background-position: top;
+    background-size: cover;
+    padding: 250px 0px;
+}
+.banner h1{
+    font-family: "GeekyFont", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(242, 241, 1);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+}
+.container{
+    width: 700px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.btn-start{
+    display: inline-block;
+    background-color: rgb(0,0,0);
+    padding: 30px 100px;
+    border: solid 3px rgb(136, 136, 136);
+    border-radius: 5px;
+    margin-bottom: -100px;
+    color: white;
+}
+.btn-start:hover{
+    background-color: rgb(136, 136, 136);
+    border: solid 3px rgb(230,230,230);
+    color: black;
+}
+@media (max-width:700px) {
+    .container{
+        width: auto;
+    }
+    .banner{
+        padding: 110px 0px;
+    }
+}
+@media (max-width:392px) {
+    .banner{
+        padding: 50px 0px;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .btn-start{
+        padding: 10px 30px;
+    }
+}
+@media (max-width:241px) {
+    .banner{
+        padding: 20px 0px;
+    }
+    .banner h1{
+        font-size: 20px;
+    }
+    .btn-start{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
